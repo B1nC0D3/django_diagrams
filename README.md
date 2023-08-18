@@ -6,7 +6,14 @@
 ## Запуск приложения
 Перед запуском сервера необходимо наполнить .env-файл по аналогии с примером в репозитории
 
-В корне django-приложения выполните
+В корне проекта выполните
+```
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+```
+
+Далее, в корне django-приложения выполните
 ```
     python manage.py migrate # для запуска основного приложения
     python manage.py cratesuperuser
